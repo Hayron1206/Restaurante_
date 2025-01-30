@@ -33,6 +33,9 @@ Router::get('produto/{id}',[App\Controllers\ProdutosController::class,'edit'])->
 Router::post('produto/{id}',[App\Controllers\ProdutosController::class,'update']);
 Router::post('produto',[App\Controllers\ProdutosController::class,'storage'])->name('produto.storage');
 
+Router::get('configuracoes', [App\Controllers\ConfiguraçõesController::class,'index'])->name('configuracoes');
+Router::post('configuracoes', [App\Controllers\ConfiguraçõesController::class,'update']);
+
 
 Router::get('gorjetas/{funcionario_id}/{data}',function($funcionario_id,$data){
     echo "Gorjetas do Funcionario $funcionario_id no dia $data";

@@ -19,7 +19,7 @@
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="white" data-active-color="danger">
+    <div class="sidebar" data-color="white" data-active-color="primary">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
           <div class="logo-image-small">
@@ -92,11 +92,11 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="#">Action</a>
                   <a class="dropdown-item" href="#">Another action</a>
-                  
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn-rotate" href="javascript:;">
+                <a class="nav-link btn-rotate" href="<?=route('configuracoes');?>">
                   <i class="nc-icon nc-settings-gear-65"></i>
                   <p>
                     <span class="d-lg-none d-md-block">Account</span>
@@ -115,13 +115,20 @@
         <div class="container-fluid">
           <div class="row">
             <nav class="footer-nav">
-              <ul>
-                <li><a href="https://github.com/Hayron1206" target="_blank">GitHub</a></li>
-                <li><a href="https://www.creative-tim.com/blog" target="_blank">Blog</a></li>
-                <li><a href="https://www.creative-tim.com/license" target="_blank">Licenses</a></li>
+            <ul>
+              <li>
+                  <a href="https://github.com/Hayron1206">
+                    <i class="fab fa-github" style="color: black;"></i> GitHub
+                  </a>
+              </li>
+                
+              <li>
+                <a href="https://github.com/Hayron1206/Restaurante_">
+                  <i class="fa fa-code" style="color: black;"></i> Codigo do projeto
+                </a>
+              </li>
               </ul>
             </nav>
-            
           </div>
         </div>
       </footer>
@@ -129,6 +136,8 @@
   </div>
   <?=scripts('jquery','popper','bootstrap','perfect-scrollbar','bootstrap-notify', 'dashboard')?>
   <?=component('notify');?>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</body>
 </body>
 
 </html>

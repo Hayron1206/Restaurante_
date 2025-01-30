@@ -257,18 +257,21 @@ INSERT INTO `atendimentos` (`id`, `cliente_id`, `mesa`, `pagamento_data`, `valor
 --
 
 CREATE TABLE `configs` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `value` varchar(100) NOT NULL
+  `id` int(10) UNSIGNED NOT NULL, 
+  `label` varchar(100) NOT NULL, 
+  `name` varchar(100) NOT NULL, 
+  `value` varchar(100) NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci COMMENT='Armazena as constantes do sistema, exemplo: no da lanchonete, valor da taxa de serviço, se vai utilizar o modo de preparo.';
 
 --
 -- Extraindo dados da tabela `configs`
 --
 
-INSERT INTO `configs` (`id`, `name`, `value`) VALUES
-(1, 'APPLICATION_URL', 'http://restaurante.test'),
-(2, 'APPLICATION_NAME', 'RestauranteIF');
+INSERT INTO `configs` (`id`, `label`, `name`, `value`) VALUES 
+(1, 'Link da Aplicação', 'APPLICATION_URL', 'http://restaurante.test'), 
+(2, 'Nome da Aplicação', 'APPLICATION_NAME', 'RestauranteIF'), 
+(3, 'Taxa de serviço', 'TAXA_SERVICO', '0'); 
+
 
 -- --------------------------------------------------------
 

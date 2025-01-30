@@ -1,8 +1,9 @@
 <div class="container-fluid">
+<h3>Funcionarios</h3>
     <div class="row d-flex justify-content-end">
         <div class="col-6 col-md-4 col-sm-2 text-right">
             <a href="<?=route('funcionario.create')?>" class="btn btn-primary">
-                <i class="fa fa-user-plus"></i> Add Funcionário</a>
+                <i class="fa fa-user-plus"></i> Adicionar Funcionário</a>
         </div>
     </div>
     <div class="row">

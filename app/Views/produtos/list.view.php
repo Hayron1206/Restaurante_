@@ -1,4 +1,6 @@
 <div class="container-fluid">
+<h3>Produtos</h3>
+
     <div class="row d-flex justify-content-end">
         <div class="col-6 col-md-4 col-sm-2 text-right">
             <a href="<?= route('produto.create') ?>" class="btn btn-primary">
@@ -10,18 +12,10 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th title="Descrição do Produto">
-                            Nome
-                        </th>
-                        <th>
-                            Valor
-                        </th>
-                        <th>
-                            Disponível
-                        </th>
-                        <th>
-                            Ações
-                        </th>
+                        <th title="Descrição do Produto">Nome</th>
+                        <th>Valor</th>
+                        <th>Disponível</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,7 +30,7 @@
                                 <form action="<?= route('produto.delete') ?>" method="post">
                                     <?= CSRF() ?>
                                     <input type="hidden" name="id" value="<?= $produto->id ?>">
-                                    <button type="submit" class="link">
+                                    <button type="submit" class="link btn btn-link p-0">
                                         <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
@@ -46,6 +40,5 @@
                 </tbody>
             </table>
         </div>
-
     </div>
-</div>
+</div>  
