@@ -18,6 +18,6 @@ class MaxLength
     
     public function getErrorMessage(string $fname): string
     {
-        return "A $fname deve ter no máximo {$this->maxLength} caracteres. seu arrombado";
+        return "A $fname deve ter no máximo {$this->maxLength} caracteres";
     }
 }
